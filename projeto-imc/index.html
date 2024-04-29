@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Calculando o IMC com JavaScript</h1>
+    </header>
+
+    <form action="" id="formulario">
+        <div class="group-form">
+            <label for="nome">Nome:</label>
+            <input type="text" name="nome" id="nome" pattern="[A-Za-zÀ-ú\s]+" title="Digite um nome válido (somente letras e espaços)">
+        </div>
+        <div class="group-form">
+            <label for="idade">Idade:</label>
+            <input name="idade" id="idade" type="number" min="18" max="100" title="Digite uma idade válida (entre 18 e 100 anos)" >
+        </div>
+        <div class="group-form">
+            <label for="peso">Peso:</label>
+            <input type="number" name="peso" min="0" id="peso" max="500" step="0.01" title="Digite um peso válido (entre 0 e 500 kg)" required>
+        </div>
+        <div class="group-form">
+            <label for="altura">Altura:</label>
+            <input type="number" title="Digite uma altura válida (entre 0 e 300 cm)" step="0.01" min="0.0" max="2.70" name="altura" id="altura" required>
+        </div>
+        </div>
+        <div class="group-button">
+
+            <input type="submit" id="submit" value="Enviar">
+            <input type="button" id="limpar" value="Limpar">
+
+        </div>
+        <div id="back" ></div>
+        <div class="result">
+            <div>
+                <label for="cxImc">IMC</label>
+                <input type="number" name="cxImc" id="cxImc" value="0.0" disabled>
+                <span id="statsImc"></span>
+            </div>
+            <h1 id="title">RESUMO</h1>
+
+            <p id='nome' class='pessoa' ondblclick=""></p>
+            <p id='idade' class='pessoa'></p>
+            <p id='peso' class='pessoa'></p>
+            <p id='altura' class='pessoa'></p>
+            <p id='imc' class='pessoa'></p>
+        </div>
+
+    </form>
+    <script src="script.js"></script>
+</body>
+
+</html>

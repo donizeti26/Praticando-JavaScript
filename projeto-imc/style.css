@@ -1,0 +1,109 @@
+*, body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    background-color: #EDF2F7;
+    margin: auto;
+    text-align: center;
+}
+header h1{
+    padding: 40px 0;
+    color:#318CFC;
+}
+#formulario{
+    margin: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 12px;
+    max-width: 60%;
+    margin: auto;
+    border-radius: 14px;
+    padding: 24px;
+    background-color: #FFFFFF;
+    box-shadow:
+    1.9px 3.1px 6.4px rgba(0, 0, 0, 0.059),
+    5.4px 8.5px 17.7px rgba(0, 0, 0, 0.085),
+    13px 20.5px 42.5px rgba(0, 0, 0, 0.111),
+    43px 68px 141px rgba(0, 0, 0, 0.17);
+}
+.group-form{
+    display: flex;
+width: 100%;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+}
+.result{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 12px;
+    width: 100%;
+}
+#cxImc{
+    width: 70px;
+    padding: 12px;
+    text-align: center;
+    background-color:#65656533;
+
+}
+.result p{
+    background-color: #3891ff7d;
+    width: 68%;
+}
+.result h1{
+    display: none;
+}
+#back{
+    background: #fff;
+    position: absolute;
+    width: 54%;
+    height: 49%;
+    top: 26%;
+    z-index: -1;
+    border-radius: 30px;
+}
+.group-form label{
+    font-size: 24px;
+    font-weight: 600;
+    margin-right: 16px;
+    color:#656565;
+}
+.group-form input{
+    background-color: #6d6d6d40;
+    border: 1px solid white;
+    opacity: 2s;
+    padding: 10px 10px;
+    width: 50%;
+    font-size: 16px;
+    border-radius: 8px;
+
+}
+.group-button input{
+    margin-top: 10px;
+    color: #fff;
+    font-size: 16px;
+    border: 1px solid #318CFC;
+    background-color: #318CFC;
+    padding: 14px 36px;
+    
+}
+.group-button input:hover{
+    background-color: #006eff;
+    border: 1px solid #006eff;
+
+
+    
+}
+input:focus {
+    background-color: #318cfc8f;
+
+    outline: 0;
+}
