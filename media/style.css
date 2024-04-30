@@ -1,0 +1,143 @@
+* , body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    background-color: #fff;
+    margin: auto;
+    text-align: center;
+    width: 100vh;
+}
+header h1{
+    padding: 40px 0;
+    color:#318CFC;
+}
+#formulario{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 12px;
+
+
+}
+#content{
+    padding: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #318cfc;
+    border-radius: 24px;
+    gap: 24px;
+    color: #fff;
+    font-weight: 500;
+    box-shadow:
+    0px 1.5px 4.3px -22px rgba(0, 0, 0, 0.133),
+    0px 3.5px 10.4px -22px rgba(0, 0, 0, 0.196),
+    0px 6.6px 19.5px -22px rgba(0, 0, 0, 0.244),
+    0px 11.8px 34.8px -22px rgba(0, 0, 0, 0.291),
+    0px 22.1px 65.2px -22px rgba(0, 0, 0, 0.343),
+    0px 53px 156px -22px rgba(0, 0, 0, 0.42)
+  ;
+}
+.form-input label{
+    font-size: 24px;
+}
+.form-input{ 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+
+}
+.form-input input{
+width: 50%;
+    padding: 30px;
+    font-size: 30px;
+    text-align: center;
+    outline: 0;
+    border: 1px solid #318CFC;
+    background-color: #fff;
+    border-radius: 8px;
+}
+.btn-form{
+    display: flex;
+    gap: 12px;
+}
+.btn-form input{
+    width: 150px;
+    height: 50px;
+}
+#calcular{
+    color: #fff;
+    font-size: 20px;
+    background-color: #009370;
+    outline: 0;
+    border: none;
+}
+#calcular:hover{
+    background-color: #007156;
+}
+#limpar:hover{
+    background-color: #ff0093;
+}
+#limpar{
+    color: #fff;
+    font-size: 20px;
+    background-color: #f576bf;
+    outline: 0;
+    border: none;
+}
+
+.stf{
+    width: 150px;
+    height: 60px;
+    outline: 0;
+    border: none;
+    font-size: 16px;
+
+}
+.result{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+}
+.result label{
+    font-size: 30px;
+}
+#media{
+    width: 30%;
+    padding: 10px;
+    font-size: 30px;
+    outline: 0;
+    border: none;
+}
+.padrao {
+    background-color: #4a4a4a;
+    color: #fff;
+}
+
+
+#alert{
+    display: none;
+    background-color: red;
+    padding: 20px;
+    border-radius: 8px;
+}
+.aprovado{
+    background-color: #009370;
+
+}
+.reprovado{
+    background-color: #f52d0c;
+
+}
+.recuperacao{
+    background-color: #f48f05;
+
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Calculando Média com JavaScript</h1>
+    </header>
+    <form id="formulario">
+        <div id="content">
+            <div class="form-input">
+                <label for="Nota1">NOTA 1</label>
+                <input type="number" name="Nota1" id="Nota1" value="" min="0" max="10" required onblur="validarNumero(this)">
+            </div>
+            <div class="form-input">
+                <label for="Nota2">NOTA 2</label>
+                <input type="number" name="Nota2" id="Nota2" value="" min="0" max="10" required onblur="validarNumero(this)">
+            </div>
+            <div class="btn-form">
+                <input type="submit" id="calcular" value="Calcular">
+                <input type="button" id="limpar" value="Limpar">
+    
+            </div>
+    
+            <div class="result ">
+                <label for="media">Média</label>
+                <input type="number" name="media" id="media" value="" readonly >
+                <input class="stf padrao" type="button" value="Situação Final" readonly>
+            </div>
+            <div id="alert">
+            </div>
+
+        </div>
+
+    </form>
+
+    <script src="script.js"></script>
+</body>
+</html>
