@@ -1,0 +1,161 @@
+* , body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    margin: auto;
+    text-align: center;
+    width: 100vw;
+    height: 100vh;
+}
+h1, h3{
+    color:#fff;
+    text-transform: uppercase;
+
+}
+#content{
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.623), rgb(0, 0, 0)), url(./assets/mago.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 34px;
+    
+}
+#forms{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 16px;
+    padding-top: 24px;
+}
+#InputNumero{
+    width: 150px;
+    height: 150px;
+    font-size: 70px;
+    font-weight: 700;
+    text-align: center;
+}
+#btnChutar{
+    padding: 30px;
+    border: 0;
+    background-color: #4CAF50;
+    font-size: 29px;
+    font-weight: 600;
+    color: #fff;cursor: pointer;
+    border-radius: 8px;
+}
+#btnChutar:hover{
+
+    background-color: #00ff0a;
+}
+#btnSong{
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    background-color: #242424;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    
+}
+
+#btReload{
+    display: none;
+    padding: 8px;
+    border-radius: 8px;
+    background-color: #f48f05;
+}
+#btnSong:hover{
+
+    background-color: #b8b8b8;
+    ion-icon {
+        color: #242424;
+    }
+}
+ion-icon {
+    font-size: 40px;
+    color: #fff;
+  }
+
+
+
+#content h1{
+    animation: move 1s infinite alternate linear;
+
+}
+#content h3{
+    animation: moveInvert 1s infinite alternate linear;
+
+}
+
+#aviso{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 24px;
+    flex-direction: column;
+    gap: 12px;
+
+}
+#msg-atention{
+    background-color: #f48f05;
+    width: 60%;
+    text-align: center;
+    border-radius: 16px;
+    padding: 16px;
+    font-size: 20px;
+    font-weight: 900;
+    color: white;
+}
+#msg-right{
+    background-color: #00ff0a;
+    width: 60%;
+    text-align: center;
+    border-radius: 16px;
+    padding: 16px;
+    font-size: 20px;
+    font-weight: 900;
+    color: white;
+}
+#msg-erro{
+    background-color: red;
+    width: 60%;
+    text-align: center;
+    border-radius: 16px;
+    padding: 16px;
+    font-size: 20px;
+    font-weight: 900;
+    color: white;
+}
+
+@keyframes move {
+
+    0%{
+
+        transform: translateX(5px);
+
+    }
+    100%{
+
+        transform: translateX(0);
+    }    
+}
+
+@keyframes moveInvert {
+
+    0%{
+
+        transform: translateX(0px);
+
+    }
+    100%{
+
+        transform: translateX(5px);
+    }    
+}

@@ -1,4 +1,3 @@
-"
 let cal = document.querySelector('#calcular')
 let limp = document.querySelector('#limpar')
 
@@ -94,6 +93,3 @@ limp.addEventListener('click', function(){
 
 })
 
-
-//CLASSIFICANDO SITUAÇÃO
-"
