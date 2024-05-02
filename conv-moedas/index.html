@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+        
+    <div id="forms">
+        <header>
+            <h1>Conversos de moedas - JavaScript</h1>
+            <h3>02/05/2024</h3>
+
+        </header>
+        <div class="itemContent">
+            <label for="inputMoeda">R$</label>
+            <input type="number" name="inputMoeda" value='' tabindex="0" id="inputMoeda" onChange='ativarBotao(), desativarBotao()'/>
+
+        </div>
+
+        <div >
+            <input type="radio" class="radios" name="moeda" id="dolar" value="dolar"/>
+            <label for="moeda">Dolar</label>
+
+            <input type="radio" class="radios" name="moeda" id="euro" value="euro"/>
+            <label for="moeda">Euro</label>
+            
+            <input type="radio" class="radios" name="moeda" id="bitcoin" value="bitcoin"/>
+            <label for="moeda">Bitcoin</label>
+        </div>
+
+        <div class="itemContent" >
+            <button disabled="disabled" class="convert">Converter</button>
+            <button type="button" id="limpar" >Limpar</button>
+        </div>
+        <div class="result">
+<input type="text" name="result" id="inputResult" value="Informe o valor, escolha a moeda e clique em Converter" disabled>
+        </div>
+        <div class="alert">
+        </div>
+        
+    </div>
+    
+    <script src="script.js" > </script>
+</body>
+</html>
