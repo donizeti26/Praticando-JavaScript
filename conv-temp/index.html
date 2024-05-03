@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Conversor de temperatura</h1>
+        <h3>Conversor de temperatura</h3>
+
+    </header>
+    <div id="content">
+        <div>
+            <button type="button" id="btn-limpar">Limpar</button>
+        </div>
+        <div class="group-temp">
+            
+            <div class=" aling-content">
+                <label for="inptCe">Celsius</label>
+                <input type="number" name="inptCe"  autofocus step="0.1" id="inptCe"/>
+                <label for="inptCe">C°</label>
+
+            </div>
+            <div class=" aling-content">
+                <label for="rgCe"> -273.00 </label>
+                <input type="range" id="rgCe" name="rgCe" min="-273.00" max="100.00" />
+                <label for="rgCe">100.00</label>
+              </div>
+        </div>
+
+        <div class="group-temp">
+            
+            <div class=" aling-content">
+                <label for="inptFa">Fahrenheit</label>
+                <input type="number" name="inptFa" id="inptFa" disabled/>
+                <label for="inptFa">F°</label>
+
+            </div>
+            <div class=" aling-content">
+                <label for="rgFa"> -459.40 </label>
+                <input type="range" id="rgFa" name="rgFa" min=" -459.40" max="212.00" />
+                <label for="rgFa">212.00</label>
+              </div>
+        </div>
+
+        <div class="group-temp">
+            
+            <div class=" aling-content">
+                <label for="inptKe">Kelvin</label>
+                <input type="number" name="inptKe" id="inptKe" disabled/>
+                <label for="inptKe">K°</label>
+
+            </div>
+            <div class=" aling-content">
+                <label for="rgKe"> 0.00 </label>
+                <input type="range" id="rgKe" name="rgKe" min="0" max="373.00" />
+                <label for="rgKe">373.00</label>
+              </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
