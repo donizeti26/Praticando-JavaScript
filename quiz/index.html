@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Quiz</title>
+</head>
+<body>
+    <header>
+        <h1 id='titulo'>App</h1>
+
+
+        <span id='instrucoes' class='placar'> Leia as questões e clique na resposta</span>
+
+    </header>
+
+    <div id="questao">
+        <section id="topoQuestao">
+            <span id='NumQuestoes'>? </span>
+            <h2 id='pergunta'> ???</h2>
+        </section>
+
+
+        <section>
+            <div class='corpoQuestao'>
+                <ol class='alternativas'>
+                    <li id="a" value="1A" class='letras' onClick='verificarSeAcertou(this, this)'></li>
+                    <li id="b" value="1B" class='letras' onClick='verificarSeAcertou(this, this)'></li>
+                    <li id="c" value="1C" class='letras' onClick='verificarSeAcertou(this, this)'></li>
+                    <li id="d" value="1D" class='letras' onClick='verificarSeAcertou(this, this)'></li>
+                </ol>
+            </div>
+        </section>
+        <footer id='aviso' class='rodapeQuestao centro'>
+            <span id='numero'></span>
+            de <span id='total'></span>
+        </footer>
+    
+        <footer class='centro' id='autoria'>
+        Desenvolvido por Donizeti &copy; 2024
+        </footer>
+    </div>
+
+
+
+    <input type="hidden" id='correct' name='correct' value='' />
+    <!-- JS EXTERNO -->
+    <script src="script.js"></script>
+</body>
+</html>

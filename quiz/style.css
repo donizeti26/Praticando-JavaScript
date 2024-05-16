@@ -1,0 +1,89 @@
+*, body{
+margin: 0;
+border: 0;
+box-sizing: border-box;
+font-family: 'Roboto', sans-serif;
+font-size: 20px;
+}
+body{
+text-align: center;
+width: 100vw;
+height: 100vh;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+gap: 12px;
+}
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+header span{
+    background-color: #53535323;
+    padding: 16px;
+    border-radius: 12px;
+}
+#topoQuestao{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+}
+#Content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 12px;
+
+}
+#questao{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    border: 1px solid #9c9c9c85;
+    padding: 16px;
+    border-radius: 12px;
+}
+#NumQuestoes{
+    background-color: #008cff;
+    padding: 8px;
+    color: #ffff;
+    border-radius: 6px;
+    margin-right: 10px;
+}
+#aviso{
+    color: #008cff;
+}
+
+.alternativas{
+    all: unset;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    cursor: pointer;
+}
+
+.alternativas li:hover{
+    color: #ffff;
+    background-color: #008cff;
+
+}
+
+.alternativas li{
+    padding: 32px 24px 32px;
+    border-radius: 8px;
+}
+.corpoQuestao{
+    padding: 20px;
+}
+
