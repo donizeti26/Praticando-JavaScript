@@ -1,0 +1,64 @@
+{
+    "personagens":[
+        {
+            "perfil":"./assets/tanjiro.jpg",
+            "nome":"Tanjiro Kamado",
+            "kanji":"竈門 炭治郎",
+            "idade":16,
+            "genero":"masculino",
+            "altura":165,
+            "peso":61
+
+        },
+        {
+            "perfil":"./assets/nezuko.jpg",
+            "nome":"Kamado Nezuko",
+            "kanji":"竈門 禰豆子",
+            "idade":14,
+            "genero":"feminino",
+            "altura":153,
+            "peso":45
+
+        }
+        ,
+        {
+            "perfil":"./assets/Agatsuma.jpg",
+            "nome":"Agatsuma Zen'itsu",
+            "kanji":"我妻 善逸",
+            "idade":16,
+            "genero":"masculino",
+            "altura":164.5,
+            "peso":58
+        },
+        {
+            "perfil":"./assets/kocho.jpg",
+            "nome":"Kochō Shinobu",
+            "kanji":"胡蝶 しのぶ",
+            "idade":18,
+            "genero":"feminino",
+            "altura":151,
+            "peso":37
+
+        },
+        {
+            "perfil":"./assets/kanroji.jpg",
+            "nome":"Kanroji Mitsuri",
+            "kanji":"甘露寺 蜜璃",
+            "idade":19,
+            "genero":"feminino",
+            "altura":167,
+            "peso":56
+
+        },
+        {
+            "perfil":"./assets/inosuke.jpg",
+            "nome":"Hashibira Inosuke",
+            "kanji":"嘴平 伊之助",
+            "idade":15,
+            "genero":"masculino",
+            "altura":164,
+            "peso":63
+
+        }
+    ]
+}
