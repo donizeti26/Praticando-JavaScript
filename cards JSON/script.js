@@ -18,7 +18,7 @@ fetch('data.json')
 })
 
 }
-carregarDados()
+
 
 function atribuirDados(data) {
 
@@ -28,33 +28,33 @@ function atribuirDados(data) {
 
         const img = document.createElement ('img')
         img.setAttribute('id','img')
-        img.setAttribute('scr',item.perfil)
+        img.src = item.perfil
 
 
 
         const nome = document.createElement ('p')
         nome.setAttribute('id','nome')
-        nome.textContent = item.nome
+        nome.textContent = `Nome: ${item.nome}`
         
         const altura = document.createElement ('p')
         altura.setAttribute('id','altura')
-        altura.textContent = item.altura
+        altura.textContent = `Altura: ${item.altura}`
 
         const peso = document.createElement ('p')
         peso.setAttribute('id','peso')
-        peso.textContent = item.peso
+        peso.textContent = `Peso: ${item.peso}`
 
         const idade = document.createElement ('p')
         idade.setAttribute('id','idade')
-        idade.textContent = item.idade
+        idade.textContent = `Idade: ${item.idade}`
 
         const kanji = document.createElement ('p')
         kanji.setAttribute('id','kanji')
-        kanji.textContent = item.kanji
+        kanji.textContent = `Kanji: ${item.kanji}`
 
         const genero = document.createElement ('p')
         genero.setAttribute('id','genero')
-        genero.textContent = item.genero
+        genero.textContent = `Genero: ${item.genero}`
 
         card.appendChild(img)
         card.appendChild(nome)
@@ -68,3 +68,5 @@ function atribuirDados(data) {
         content.appendChild(card)
     });
 }
+
+window.onload = carregarDados()

@@ -28,13 +28,15 @@ body{
     padding: 16px;
 }
 #img{
+    width: 80%;
     border-radius: 50%;
 }
 .card p{
     color: #cecece;
     background-color: #45434B;
-    padding: 0 70px 0 70px;
+    padding: 3px 50px 3px 50px;
     border-radius: 8px;
+    text-align: center;
 }
 #img{
     width: 200px;

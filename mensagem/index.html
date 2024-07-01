@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mensagem</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+
+</body>
+    <div class="content">
+        <h1>App mensagem do Dia</h1>
+        <p>Seu aplicativo de mensagem do dia</p>
+        <div id="formulario">
+            <section>
+                <label for="date">Data:</label>
+
+                <input type="date" name="data" id="data"  min="2017-04-01" max="2030-12-31">
+            </section>
+            <section>
+                <label for="textArea">Citacão</label>
+                <br>
+                <textarea name="textArea" id="textArea" cols="50" rows="4" placeholder="Sua frase aqui..."></textarea>
+            </section>
+            <section>
+                <label for="autor">Autor da frase:</label>
+                <input type="text" name="autor" id="autor">
+            </section>
+            <section id="button-group">
+                <button type="button" id="criar" class="button" onclick='criarCitacao()'>Criar</button>
+                <button type="button" id="limpar" class="button">Limpar</button>
+
+            </section>
+        </div>
+        
+    </div>
+    <p id='aviso2'></p>
+
+    <section>
+        <article id='citacao00' class="citacao fundo1">
+            <h2></h2>
+            <blockquote></blockquote>
+            <span></span>
+        </article>
+    </section>
+    <div class="result desativado">
+        <p>Aqui está a sua frase do dia, basta realizar o download</p>
+        <img id="imagem-teste" src="https://source.unsplash.com/random/" alt="">
+        <section id="button-group">
+            <button type="button" id="criar" class="button">Download</button>
+            <button type="button" id="limpar" class="button">Limpar</button>
+
+        </section>
+    </div>
+    <script src="script.js"></script>
+<script src="html2canvas.js"></script>
+</body>
+</html>
