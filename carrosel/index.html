@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header id="top">
+        <img src="assets/logo.png" alt="DoniFlix Logo">
+        <span id="user">
+            <p>João Matos</p>
+            <span class="material-symbols-outlined">
+                account_circle
+            </span>
+        </span>
+    </header>
+    <section id="content">
+
+        <article id="main-banner">
+            <iframe width="853" height="480" src="https://www.youtube.com/embed/cH7VBI4QQzA" title="Tokyo Walk 24/7 - Caminhada de Tóquio" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </article>
+
+        
+        <h3 class="title-zone"><span class="material-symbols-outlined">
+            travel_explore
+        </span>
+        Travel (<span class="numVideos"></span>)
+        </h3>
+        <article class="group-cards">
+            <button class="btnPrev" onclick="show(-1,1)">
+                <span class="material-symbols-outlined">
+                    arrow_back_ios
+                </span>
+            </button>
+            <ul id="listOne" class="Videos">
+                <li>
+                    <a href="https://www.youtube.com/watch?v=GLQhbRGv5qU" rel="noopener noreferrer" target="_blank">
+                        <img class="capa-tumb" src="https://images.pexels.com/photos/2816904/pexels-photo-2816904.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.youtube.com/watch?v=3LXQWU67Ufk" rel="noopener noreferrer" target="_blank">
+                        <img class="capa-tumb" src="https://images.pexels.com/photos/378570/pexels-photo-378570.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.youtube.com/watch?v=fkzDJ9yS34M" rel="noopener noreferrer" target="_blank">
+                        <img class="capa-tumb" src="https://images.pexels.com/photos/1486577/pexels-photo-1486577.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.youtube.com/watch?v=bQwalAKrfWE" rel="noopener noreferrer" target="_blank">
+                        <img class="capa-tumb" src="https://images.pexels.com/photos/2082103/pexels-photo-2082103.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.youtube.com/watch?v=Kwwksafk_P8" rel="noopener noreferrer" target="_blank">
+                        <img class="capa-tumb" src="https://images.pexels.com/photos/9882234/pexels-photo-9882234.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1 alt="">
+                    </a>
+                </li>
+            </ul>
+            <button class="btnNext" onclick="show(+1,1)">
+
+            <span class="material-symbols-outlined">
+                arrow_forward_ios
+            </span>
+            </button>
+        </article>
+
+        
+        <h3 class="title-zone"><span class="material-symbols-outlined">
+            music_note
+            </span>
+        Music (<span class="numVideos"></span>)
+        </h3>
+        <article class="group-cards">
+            <button class="btnPrev" onclick="show(-1,1)">
+                <span class="material-symbols-outlined">
+                    arrow_back_ios
+                </span>
+            </button>
+            <ul id="listTwo" class="Videos">
+                <li>
+                    <a href="https://www.youtube.com/watch?v=qpbX7SbXOtU" rel="noopener noreferrer" target="_blank">
+                        <img class="capa-tumb" src="https://images.pexels.com/photos/13768515/pexels-photo-13768515.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.youtube.com/watch?v=3LXQWU67Ufk" rel="noopener noreferrer" target="_blank">
+                        <img class="capa-tumb" src="https://images.pexels.com/photos/378570/pexels-photo-378570.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
+                    </a>
+                </li>
+
+            </ul>
+            <button class="btnNext" onclick="show(+1,1)">
+
+            <span class="material-symbols-outlined">
+                arrow_forward_ios
+            </span>
+            </button>
+        </article>
+    </section>
+
+
+
+</body>
+<script src="script.js"></script>
+</html>
