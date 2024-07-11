@@ -48,7 +48,7 @@
     height: 350px;
 }
 
-#listOne,#listTwo, .group-cards{
+#lista1,#lista2, .group-cards{
     list-style: none;
     display: flex;
 }
@@ -56,10 +56,15 @@
     flex-direction: row;
     align-items: center;
 }
-#listOne{
-    overflow-x: auto;
+#lista1{
+
+    overflow-x: hidden;
 }
 
+
+ul{
+    width: 90%;
+}
 .btnNext, .btnPrev{
     cursor: pointer;
 }
