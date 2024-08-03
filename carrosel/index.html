@@ -1,111 +1,150 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carousel</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <header id="top">
-        <img src="assets/logo.png" alt="DoniFlix Logo">
-        <span id="user">
-            <p>João Matos</p>
-            <span class="material-symbols-outlined">
-                account_circle
-            </span>
-        </span>
-    </header>
-    <section id="content">
+  <header>
+    <img id="logo" src="./assets/logo-flix.png" alt="Logo">
+    <span class="material-symbols-outlined md-48 md-light ">
+      account_circle
+    </span>
+  </header>
 
-        <article id="main-banner">
-            <iframe width="853" height="480" src="https://www.youtube.com/embed/cH7VBI4QQzA" title="Tokyo Walk 24/7 - Caminhada de Tóquio" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-        </article>
+  <section class="content-initial">
+    <iframe id="video-initial" width="753" height="380" src="https://www.youtube.com/embed/exeVIM3j3y0"
+      title="Coringa: Delírio a Dois | Trailer Oficial #2" frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  </section>
+  <section class="content">
+    <h1>Action and comedy <span class="material-symbols-outlined">
+        sword_rose
+      </span> (<span class="numDeVideos"></span>)</h1>
 
-        
-        <h3 class="title-zone"><span class="material-symbols-outlined">
-            travel_explore
-        </span>
-        Travel (<span class="numVideos"></span>)
-        </h3>
-        <article class="group-cards">
-            <button class="btnPrev" onclick="show(-1,1)">
-                <span class="material-symbols-outlined">
-                    arrow_back_ios
-                </span>
-            </button>
-            <ul id="lista1" class="Videos">
-                <li>
-                    <a href="https://www.youtube.com/watch?v=GLQhbRGv5qU" rel="noopener noreferrer" target="_blank">
-                        <img class="capa-tumb" src="https://images.pexels.com/photos/2816904/pexels-photo-2816904.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
-                    </a>
-                </li>
-                <li>
-                    <a href="https://www.youtube.com/watch?v=3LXQWU67Ufk" rel="noopener noreferrer" target="_blank">
-                        <img class="capa-tumb" src="https://images.pexels.com/photos/378570/pexels-photo-378570.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
-                    </a>
-                </li>
-                <li>
-                    <a href="https://www.youtube.com/watch?v=fkzDJ9yS34M" rel="noopener noreferrer" target="_blank">
-                        <img class="capa-tumb" src="https://images.pexels.com/photos/1486577/pexels-photo-1486577.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
-                    </a>
-                </li>
-                <li>
-                    <a href="https://www.youtube.com/watch?v=bQwalAKrfWE" rel="noopener noreferrer" target="_blank">
-                        <img class="capa-tumb" src="https://images.pexels.com/photos/2082103/pexels-photo-2082103.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
-                    </a>
-                </li>
-                <li>
-                    <a href="https://www.youtube.com/watch?v=Kwwksafk_P8" rel="noopener noreferrer" target="_blank">
-                        <img class="capa-tumb" src="https://images.pexels.com/photos/9882234/pexels-photo-9882234.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1 alt="">
-                    </a>
-                </li>
-            </ul>
-            <button class="btnNext" onclick="show(+1,1)">
+    <article class="category">
+      <button class="PrevButton" onclick="show(-1,1)">
+        <span class="material-symbols-outlined">arrow_back_ios</span>
+      </button>
+      <ul id="list1" class="videos">
+        <li>
+          <a href="https://youtu.be/pyKjZISYcBE" rel="noreferrer noopener"><img class="cover-thumbnail"
+              src="https://www.mundoconectado.com.br/wp-content/uploads/2024/05/image-183-1200x628.png" alt=""></a>
+        </li>
+        <li>
+          <a href="https://youtu.be/R_taczjSuS8" rel="noreferrer noopener"><img class="cover-thumbnail"
+              src="https://i.ytimg.com/vi/4vi6ZWe_3Yc/maxresdefault.jpg" alt=""></a>
+        </li>
+        <li>
+          <a href="https://youtu.be/E1fYdjVksrQ" rel="noreferrer noopener"><img class="cover-thumbnail"
+              src="https://img66.tokyvideo.com/videos/525/525420/previews/previews_0012_custom_1710284126.9176.jpg"
+              alt=""></a>
+        </li>
+        <li>
+          <a href="https://youtu.be/zvwDen1Wrx8" rel="noreferrer noopener"><img class="cover-thumbnail"
+              src="https://dx35vtwkllhj9.cloudfront.net/lionsgateus/the-ministry-of-ungentlemanly-warfare/images/regions/us/updates/header.jpg"
+              alt=""></a>
+        </li>
+        <li>
+          <a href="https://youtu.be/LZBlXkDvhh4" rel="noreferrer noopener"><img class="cover-thumbnail"
+              src="https://beam-images.warnermediacdn.com/BEAM_LWM_DELIVERABLES/08f3260f-1512-4c90-a3df-fc2e407ba708/e64158eecab6c55b34e3f4b45180622234405742.jpg?host=wbd-images.prod-vod.h264.io&partner=beamcom"
+              alt=""></a>
+        </li>
+        <li>
+          <a href="https://youtu.be/O3P-y7j6R14" rel="noreferrer noopener"><img class="cover-thumbnail"
+              src="https://pbs.twimg.com/media/GIELi8haEAAQ0VO?format=png&name=900x900" alt=""></a>
+        </li>
+      </ul>
+      <button class="nextButton" onclick="show(+1,1)">
+        <span class="material-symbols-outlined">arrow_forward_ios</span>
+      </button>
 
-            <span class="material-symbols-outlined">
-                arrow_forward_ios
-            </span>
-            </button>
-        </article>
+    </article>
 
-        
-        <h3 class="title-zone"><span class="material-symbols-outlined">
-            music_note
-            </span>
-        Music (<span class="numVideos"></span>)
-        </h3>
-        <article class="group-cards">
-            <button class="btnPrev" onclick="show(-1,2)">
-                <span class="material-symbols-outlined">
-                    arrow_back_ios
-                </span>
-            </button>
-            <ul id="lista2" class="Videos">
-                <li>
-                    <a href="https://www.youtube.com/watch?v=qpbX7SbXOtU" rel="noopener noreferrer" target="_blank">
-                        <img class="capa-tumb" src="https://images.pexels.com/photos/13768515/pexels-photo-13768515.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
-                    </a>
-                </li>
-                <li>
-                    <a href="https://www.youtube.com/watch?v=3LXQWU67Ufk" rel="noopener noreferrer" target="_blank">
-                        <img class="capa-tumb" src="https://images.pexels.com/photos/378570/pexels-photo-378570.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
-                    </a>
-                </li>
-
-            </ul>
-            <button class="btnNext" onclick="show(+1,2)">
-
-            <span class="material-symbols-outlined">
-                arrow_forward_ios
-            </span>
-            </button>
-        </article>
-    </section>
+    <h1>Animes<span class="material-symbols-outlined">
+        flash_on
+      </span> (<span class="numDeVideos"></span>)</h1>
+    <article class="category">
+      <button class="PrevButton" onclick="show(-1,2)">
+        <span class="material-symbols-outlined">arrow_back_ios</span>
+      </button>
+      <ul id="list2" class="videos">
+        <li>
+          <a href="https://youtu.be/Lk7XoO4LMcI" rel="noreferrer noopener"><img class="cover-thumbnail"
+              src="https://image.tmdb.org/t/p/original/wnOyzCLRiTAdmoY8V1Dmk3AWyHg.jpg" alt=""></a>
+        </li>
+        <li>
+          <a href="https://youtu.be/ZBOXufdpin0" rel="noreferrer noopener"><img class="cover-thumbnail"
+              src="https://anoboy.pro/assets/images/2024-07-tokidoki-bosotto-russia-go-de-dereru-tonari-no-alya-san.jpg"
+              alt=""></a>
+        </li>
+        <li>
+          <a href="https://youtu.be/dOWUh9Ja4oM" rel="noreferrer noopener"><img class="cover-thumbnail"
+              src="https://animenew.com.br/wp-content/uploads/2024/07/Dragon-Ball-Daima-sera-exibido-no-evento-de-40-Anos-da-franquia-jpg.webp"
+              alt=""></a>
+        </li>
+        <li>
+          <a href="https://youtu.be/22R0j8UKRzY" rel="noreferrer noopener"><img class="cover-thumbnail"
+              src="https://miro.medium.com/v2/resize:fit:1200/0*-p9KdeOq6kbXpwuf.jpg" alt=""></a>
+        </li>
+      </ul>
 
 
+      <button class="nextButton" onclick="show(+1,2)">
+        <span class="material-symbols-outlined">arrow_forward_ios</span>
+      </button>
+
+    </article>
+
+    <h1>Horror<span class="material-symbols-outlined">
+        flash_on
+      </span> (<span class="numDeVideos"></span>)</h1>
+    <article class="category">
+      <button class="PrevButton" onclick="show(-1,3)">
+        <span class="material-symbols-outlined">arrow_back_ios</span>
+      </button>
+      <ul id="list3" class="videos">
+        <li>
+          <a href="https://youtu.be/JcKRaUGJcqY" rel="noreferrer noopener"><img class="cover-thumbnail"
+              src="https://i.ytimg.com/vi/lKP24VL1vEE/maxresdefault.jpg" alt=""></a>
+        </li>
+        <li>
+          <a href="https://youtu.be/dD264ZjfKlk" rel="noreferrer noopener"><img class="cover-thumbnail"
+              src="https://www.comboinfinito.com.br/principal/wp-content/uploads/2018/12/it-a-coisa-2.jpg" alt=""></a>
+        </li>
+        <li>
+          <a href="https://youtu.be/fsr7lgD7nZE" rel="noreferrer noopener"><img class="cover-thumbnail"
+              src="https://i0.wp.com/hospicionerd.com.br/wp-content/uploads/2024/04/Os-observadores.jpg?fit=640%2C400&ssl=1"
+              alt=""></a>
+        </li>
+        <li>
+          <a href="https://www.youtube.com/watch?v=QVs-iTmgxvQ" rel="noreferrer noopener"><img class="cover-thumbnail"
+              src="https://i.ytimg.com/vi/NY0DsnYaO2g/maxresdefault.jpg" alt=""></a>
+        </li>
+      </ul>
+
+
+      <button class="nextButton" onclick="show(+1,3)">
+        <span class="material-symbols-outlined">arrow_forward_ios</span>
+      </button>
+
+    </article>
+  </section>
 
 </body>
-<script src="script.js"></script>
+<script src="script.js"> </script>
+
 </html>

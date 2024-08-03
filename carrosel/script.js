@@ -1,33 +1,32 @@
-let listOne = document.querySelectorAll('#lista1 li')
-let listTwo = document.querySelectorAll('#lista2 li')
+let ulsElis = document.querySelectorAll(`ul li`)
 
-let numVideos = document.querySelectorAll('.numVideos')
-let numDeItens = 6
+let numDeItem = 3
 
-numVideos[0].textContent = listOne.length
-numVideos[1].textContent = listTwo.length
+let list1 = document.querySelectorAll('#list1 li')
+let list2 = document.querySelectorAll('#list2 li')
+let list3 = document.querySelectorAll('#list3 li')
 
-function show(indice, indiceLista){
-
-    let listaUl = document.querySelector('#lista'+indiceLista)
-
-    let mover = 550
-    let posicaoXDireita = mover
-    let posicaoXEsquerda = -mover
+let numDeVideos = document.querySelectorAll('.numDeVideos')
+numDeVideos[0].textContent = list1.length
+numDeVideos[1].textContent = list2.length
+numDeVideos[2].textContent = list3.length
 
 
+function show(index, indexList) {
+  let n = index
+  numDeItem = numDeItem + index
 
-    if(indice == +1){
-        listaUl.scrollBy({
-            left: posicaoXDireita,
-            behavior: 'smooth'
-        });
-    }
-    if(indice == -1){
-        listaUl.scrollBy({
-            left: posicaoXEsquerda,
-            behavior: 'smooth'
-        });
-    }
-    console.log('aaaaaa')
+
+  let listUl = document.querySelector('#list' + indexList)
+  let toMove = 400
+
+  let positionXRight = toMove
+  let positionXLeft = -toMove
+
+  if (index == +1) {
+    listUl.scrollBy(positionXRight, 0)
+  }
+  if (index == -1) {
+    listUl.scrollBy(positionXLeft, 0)
+  }
 }

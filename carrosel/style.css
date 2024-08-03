@@ -1,74 +1,103 @@
-*, body{
-    margin: 0;
-    border: 0;
-    box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
-    font-size: 20px;
-    background-color: #202124;
-    padding: 8px;
-}
-.material-symbols-outlined {
-    font-variation-settings:
-    'FILL' 0,
-    'wght' 200,
-    'GRAD' 0,
-    'opsz' 24;
-    font-size: 40px;
-    color: #fff;
+* {
+  border: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-#top{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border-bottom: 1px solid #DC1A28;
-}
-#user{
-    display: flex;
-    align-items: center;
-    flex-direction: row;
-}
-#user p {
-    color: #fff;
+:root {
+  --main-color: #DB202C;
+  --main-color-cursor: #af2a30
 }
 
-#main-banner{
-    display: flex;
-    justify-content: center;
-}
-.title-zone{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: #fff;
-    margin: 10px 0 10px 0;
-}
-.capa-tumb{
-    width:500px;
-    height: 350px;
+.md-48 {
+  font-size: 48px;
 }
 
-#lista1,#lista2, .group-cards{
-    list-style: none;
-    display: flex;
-}
-.group-cards{
-    flex-direction: row;
-    align-items: center;
-}
-#lista1{
-
-    overflow-x: hidden;
+.md-light {
+  color: rgba(255, 255, 255, 1);
 }
 
-
-ul{
-    width: 90%;
+p,
+h1,
+h2 {
+  color: rgba(255, 255, 255, 1);
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
-.btnNext, .btnPrev{
-    cursor: pointer;
+
+body {
+  padding: 26px;
+  background-color: #0F0F0F;
+
 }
 
-.btnNext, .btnPrev, .material-symbols-outlined:hover{
-    color: #DC1A28;
+header {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--main-color);
+
+}
+
+#logo {
+  width: 200px;
+}
+
+.content-initial {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#video-initial {
+  padding-top: 26px;
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+
+.PrevButton,
+.nextButton {
+  background-color: var(--main-color);
+  color: rgba(255, 255, 255, 1);
+  padding: 64px 16px 64px 16px;
+  text-align: center;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.PrevButton:hover,
+.nextButton:hover {
+  background-color: var(--main-color-cursor);
+
+}
+
+.category {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  width: 80%;
+
+}
+
+.cover-thumbnail {
+  width: 400px;
+  height: 250px;
+  border-radius: 8px;
+}
+
+.videos {
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
+}
+
+.videos li {
+  padding: 8px;
+  list-style: none;
 }
